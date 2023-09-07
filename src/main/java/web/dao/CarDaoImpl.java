@@ -6,10 +6,10 @@ import web.model.Car;
 import java.util.ArrayList;
 import java.util.List;
 @Component
-public class CarDAOImitationImpl implements IDAO{
+public class CarDaoImpl implements CarDao {
     List<Car> carDataBase = new ArrayList<>();
 
-    public CarDAOImitationImpl() {
+    public CarDaoImpl() {
         for (int i = 0; i < 5; i++) {
             carDataBase.add(new Car("Model" + i, "Series" + i, 1990 + i));
         }
